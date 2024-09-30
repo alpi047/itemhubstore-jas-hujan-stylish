@@ -491,4 +491,9 @@ textarea {
         padding: 10px 20px;
         font-size: 16px;
     }
+
+    header, nav ul {
+        flex-wrap: wrap;
+        column-gap: 1rem;
+    }
 }
