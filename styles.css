@@ -1,0 +1,494 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    max-width: 1200px;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.5s ease;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+#darkModeToggle {
+    background-color: #f4a261;
+    color: #333;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    background-color: #e76f51;
+    color: #fff;
+}
+
+/* Section Beranda */
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: #fefae0;
+    color: #333;
+    text-align: left;
+}
+
+.home-content {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.home-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #264653;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #264653;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2a9d8f;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.5s ease;
+    margin-top: 15px;
+}
+
+.home-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Section Model */
+.models-section {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #264653;
+    color: #fff;
+}
+
+.models-section h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #f4a261;
+}
+
+.model-gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.model-gallery img {
+    width: 30%;
+    border-radius: 15px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    margin-top: 25px;
+}
+
+.model-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Warna */
+.colors-section {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #e9c46a;
+    color: #333;
+}
+
+.colors-sesion {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #223466;
+    color: #ffffff;
+}
+
+.colors-sesion h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.colors-section h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.color-gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.color-gallery img {
+    width: 30%;
+    border-radius: 50%;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    margin-top: 25px;
+}
+
+.color-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Harga */
+.pricing-section {
+    padding: 85px 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+.pricing-section h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.pricing-tables {
+    display: flex;
+    justify-content: space-around;
+}
+
+table {
+    width: 30%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #264653;
+    color: #fff;
+    font-weight: 600;
+}
+
+table td {
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    transition: background-color 0.5s ease;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1d3557;
+    color: #fff;
+}
+
+header.dark-mode {
+    background-color: #1a1a1a;
+}
+
+footer.dark-mode {
+    background-color: #1a1a1a;
+}
+
+nav.dark-mode ul li a {
+    color: #bbb;
+}
+
+nav.dark-mode ul li a:hover {
+    color: #f4a261;
+}
+
+.cta-button.dark-mode {
+    background-color: #2a9d8f;
+}
+
+table.dark-mode th {
+    background-color: #2a9d8f;
+}
+
+table.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+table.dark-mode td {
+    border-color: #555;
+}
+
+div.container button {
+    margin-top: 10px;
+}
+
+.order-section {
+    padding: 50px 20px;
+    background-color: #fefae0;
+    text-align: center;
+}
+
+.order-section h2 {
+    font-size: 36px;
+    color: #264653;
+    margin-bottom: 30px;
+}
+
+/* Styling Form Pesanan */
+.order-section {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-section h2 {
+    text-align: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="number"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+form input[type="text"]:focus,
+form input[type="tel"]:focus,
+form input[type="number"]:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form input[type="submit"],
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+    background-color: #0056b3;
+}
+
+form input[type="tel"],
+form input[type="text"] {
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling khusus untuk input nomor telepon */
+input[type="tel"] {
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1px;
+}
+
+/* Styling khusus untuk input nomor rekening */
+input[type="text"]#accountNumber {
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1px;
+    background-color: #f5f5f5;
+}
+
+/* Styling untuk textarea alamat */
+textarea {
+    resize: none;
+}
+
+/* Styling total harga */
+#totalPriceSection {
+    background-color: #e7f3ff;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk label total harga */
+#totalPrice {
+    font-weight: bold;
+    font-size: 22px;
+    color: #007bff;
+}
+
+
+  
+/* Media Queries */
+@media (min-width: 769px) {
+    .model-gallery img, .color-gallery img {
+        width: 98%; /* Mengatur ukuran gambar model dan warna lebih besar pada dimensi 769px ke atas */
+    }
+
+    table {
+        width: 80%;
+        margin-bottom: 30px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .home-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content {
+        padding-right: 0;
+    }
+
+    .model-gallery, .color-gallery {
+        flex-direction: column;
+    }
+
+    .model-gallery img, .color-gallery img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .pricing-tables {
+        flex-direction: column;
+        align-items: center; /* Memusatkan tabel harga pada dimensi 768px ke bawah */
+    }
+
+    table {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    form {
+        padding: 30px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea,
+    form select {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    form button[type="submit"] {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
