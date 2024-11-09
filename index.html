@@ -226,6 +226,23 @@
                 <p id="totalPrice">Rp0</p>
             </div>
 
+            <!-- Metode Pembayaran -->
+        <label>Metode Pembayaran:</label>
+        <div>
+            <input type="radio" id="cod" name="paymentMethod" value="COD" checked>
+            <label for="cod">Cash on Delivery (COD)</label>
+        </div>
+        <div>
+            <input type="radio" id="transfer" name="paymentMethod" value="Transfer Bank">
+            <label for="transfer">Transfer Bank</label>
+        </div>
+
+        <!-- Nomor Rekening (Muncul Hanya Jika Transfer Bank Dipilih) -->
+        <div id="accountNumberSection" style="display: none; margin-top: 15px;">
+            <label for="accountNumber">Nomor Rekening:</label>
+            <input type="text" id="accountNumber" name="accountNumber" placeholder="Masukkan nomor rekening Anda">
+        </div>
+
             <!-- Tombol Submit -->
             <button type="submit">Submit Pesanan</button>
         </form>
